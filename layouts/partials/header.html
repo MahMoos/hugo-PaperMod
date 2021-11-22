@@ -38,17 +38,18 @@
 
 </script>
 {{- end }}
+<link href='http://fonts.googleapis.com/css?family=Tajawal' rel='stylesheet' type='text/css'>
 
 <header class="header">
     <nav class="nav">
         <div class="logo">
             {{- $label_text := (.Site.Params.label.text | default .Site.Title) }}
             {{- if .Site.Title }}
+            {{- if .Site.Params.label.icon }}
+            <a href="https://morabaa.com"><img src="{{- .Site.Params.label.icon -}}" alt="logo" aria-label="logo"
+            height="{{- .Site.Params.label.iconHeight | default " 30px" -}}"></a>
+            {{- end -}}
             <a href="{{ "" | absLangURL }}" accesskey="h" title="{{ $label_text }} (Alt + H)">
-                {{- if .Site.Params.label.icon }}
-                <img src="{{- .Site.Params.label.icon -}}" alt="logo" aria-label="logo"
-                    height="{{- .Site.Params.label.iconHeight | default " 30px" -}}">
-                {{- end -}}
                 {{- $label_text -}}
             </a>
             {{- end }}

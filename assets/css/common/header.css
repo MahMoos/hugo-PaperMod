@@ -13,6 +13,7 @@
 }
 
 .logo,
+.logo img,
 #menu {
     display: flex;
     margin: auto var(--gap);
@@ -27,7 +28,7 @@
     font-weight: 700;
 }
 
-.logo a img {
+.logo img {
     display: inline;
     vertical-align: middle;
     pointer-events: none;
