@@ -20,3 +20,12 @@
   
 - id: home
   translation: "الصفحة الرئيسية"
+
+- id: code_copy
+  translation: "نسخ"
+
+- id: code_copied
+  translation: "تم النسخ!"
+
+- id: draft
+  translation: "مسودة"
